@@ -7,7 +7,7 @@
 window = cmds.window( title="fuck my life", widthHeight=(400, 400) )
 cmds.columnLayout( adjustableColumn=True )
 ciao = cmds.textField(w=250)
-cmds.button( label='Do Nothing', command=('print(cmds.textField(ciao, query=True, text=True))'))
+cmds.button( label='Do Things', command=('print(cmds.textField(ciao, query=True, text=True))'))
 cmds.button( label='Close', command=('cmds.deleteUI(\"' + window + '\", window=True)') )
 cmds.setParent( '..' )
 cmds.showWindow( window )
